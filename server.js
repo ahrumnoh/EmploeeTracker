@@ -160,7 +160,7 @@ const addEmployee = () => {
         message: "What is the employee's last name?",
       },
       {
-        name: 'roleId', /*5 -jobId to roleId */
+        name: 'roleId', 
         type: 'input',
         message: "What is the employee's job id?",
       },
@@ -172,8 +172,8 @@ const addEmployee = () => {
     ])
     .then(answer => {
       connection.query(
-        'INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)', /*6 job_id to role_id */
-        [answer.nameFirst, answer.nameLast, answer.roleId, answer.managerId], /*7 jobId to roleId */
+        'INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)', 
+        [answer.nameFirst, answer.nameLast, answer.roleId, answer.managerId], 
         function (err, res) {
           if (err) throw err;
           console.log('Employee added!');
@@ -192,15 +192,15 @@ const updateEmployee = () => {
         message: 'Enter employee id',
       },
       {
-        name: 'roleId',   /* 4 jobId tp roleId */
+        name: 'roleId',   
         type: 'input',
-        message: 'Enter new role id',  /*9 job id to role id */
+        message: 'Enter new role id',  
       },
     ])
     .then(answer => {
       connection.query(
         'UPDATE employee SET role_id=? WHERE id=?',
-        [answer.roleId, answer.id], /*3 jobId toroleId */
+        [answer.roleId, answer.id], 
         function (err, res) {
           if (err) throw err;
           console.log('Employee updated!');

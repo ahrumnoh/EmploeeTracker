@@ -5,7 +5,7 @@ VALUES
 ('City Planning');
 
 
-INSERT INTO role (title, salary, department_id)  /*job to role :change after error */
+INSERT INTO role (title, salary, department_id) 
 VALUES 
 ('Director', 75000, 1),
 ('Deputy Director', 45000, 1),
@@ -15,7 +15,7 @@ VALUES
 ('Engineer', 55000, 3),
 ('Miniature Horse', 0, 1);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)  /*job to role :change after error */
+INSERT INTO employee (first_name, last_name, role_id, manager_id)  
 VALUES 
 ('Ron', 'Swanson', 1, NULL),
 ('Leslie', 'Knope', 2, 1),
