@@ -113,10 +113,7 @@ const addDepartment = () => {
 };
 
 const addrole = () => {
-  // connection.query("select * all from department",function(err,data) {
-  // if err() throw err
-  // })
-
+ 
   inquirer.prompt([
       {
         name: 'jobTitle',
