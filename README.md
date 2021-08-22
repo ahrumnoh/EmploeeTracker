@@ -22,6 +22,15 @@ Developers frequently have to create interfaces that allow non-developers to eas
 
 
 
+## Installation
+$ git clone git@github.com:ahrumnoh/EmploeeTracker.git
+$ npm install
+
+
+## Usage
+$ node server.js
+
+
 
 ## 😎 Acceptance Criteria
 
