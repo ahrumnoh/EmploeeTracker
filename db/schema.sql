@@ -3,7 +3,7 @@ CREATE DATABASE company_db;
 USE company_db;
 
 DROP TABLE IF EXISTS department;
-DROP TABLE IF EXISTS role; /*2-change job to role */
+DROP TABLE IF EXISTS role; 
 DROP TABLE IF EXISTS employee;
 
 CREATE TABLE department (
